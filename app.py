@@ -461,8 +461,4 @@ if __name__ == '__main__':
     print("- POST /predict - Make predictions")
     print("- POST /predict-detailed - Detailed analysis")
     print("- GET  /model-info - Model information")
-    
-    # Untuk production di Replit
-    import os
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=5000, debug=True)
